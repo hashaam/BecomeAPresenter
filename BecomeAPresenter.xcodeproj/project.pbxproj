@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF643E8024D33BEB0058F6C2 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643E7E24D33BEB0058F6C2 /* LaunchViewController.swift */; };
+		CF643E8124D33BEB0058F6C2 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF643E7F24D33BEB0058F6C2 /* LaunchViewController.xib */; };
+		CF643E8624D34D100058F6C2 /* RequestCameraAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643E8524D34D100058F6C2 /* RequestCameraAuthorizationView.swift */; };
+		CF643E8824D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF643E8724D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib */; };
 		CFC5A2BF24D2F08100772B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A2BE24D2F08100772B58 /* AppDelegate.swift */; };
 		CFC5A2C124D2F08100772B58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A2C024D2F08100772B58 /* SceneDelegate.swift */; };
 		CFC5A2C324D2F08100772B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A2C224D2F08100772B58 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF643E7E24D33BEB0058F6C2 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		CF643E7F24D33BEB0058F6C2 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		CF643E8524D34D100058F6C2 /* RequestCameraAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCameraAuthorizationView.swift; sourceTree = "<group>"; };
+		CF643E8724D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCameraAuthorizationView.xib; sourceTree = "<group>"; };
 		CFC5A2BB24D2F08100772B58 /* BecomeAPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BecomeAPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC5A2BE24D2F08100772B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC5A2C024D2F08100772B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF643E7B24D3347E0058F6C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E7D24D334920058F6C2 /* Launch */,
+				CF643E7C24D334890058F6C2 /* ViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF643E7C24D334890058F6C2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5A2C224D2F08100772B58 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF643E7D24D334920058F6C2 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E7E24D33BEB0058F6C2 /* LaunchViewController.swift */,
+				CF643E7F24D33BEB0058F6C2 /* LaunchViewController.xib */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		CF643E8224D34AFD0058F6C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E8324D34B040058F6C2 /* RequestAuthorization */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF643E8324D34B040058F6C2 /* RequestAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E8424D34B230058F6C2 /* Camera */,
+			);
+			path = RequestAuthorization;
+			sourceTree = "<group>";
+		};
+		CF643E8424D34B230058F6C2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E8524D34D100058F6C2 /* RequestCameraAuthorizationView.swift */,
+				CF643E8724D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		CFC5A2B224D2F08100772B58 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +115,10 @@
 		CFC5A2BD24D2F08100772B58 /* BecomeAPresenter */ = {
 			isa = PBXGroup;
 			children = (
+				CF643E8224D34AFD0058F6C2 /* Views */,
+				CF643E7B24D3347E0058F6C2 /* ViewControllers */,
 				CFC5A2BE24D2F08100772B58 /* AppDelegate.swift */,
 				CFC5A2C024D2F08100772B58 /* SceneDelegate.swift */,
-				CFC5A2C224D2F08100772B58 /* ViewController.swift */,
 				CFC5A2C424D2F08100772B58 /* Main.storyboard */,
 				CFC5A2C724D2F08200772B58 /* Assets.xcassets */,
 				CFC5A2C924D2F08200772B58 /* LaunchScreen.storyboard */,
@@ -125,9 +185,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF643E8824D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib in Resources */,
 				CFC5A2CB24D2F08200772B58 /* LaunchScreen.storyboard in Resources */,
 				CFC5A2C824D2F08200772B58 /* Assets.xcassets in Resources */,
 				CFC5A2C624D2F08100772B58 /* Main.storyboard in Resources */,
+				CF643E8124D33BEB0058F6C2 /* LaunchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +203,8 @@
 				CFC5A2C324D2F08100772B58 /* ViewController.swift in Sources */,
 				CFC5A2BF24D2F08100772B58 /* AppDelegate.swift in Sources */,
 				CFC5A2C124D2F08100772B58 /* SceneDelegate.swift in Sources */,
+				CF643E8624D34D100058F6C2 /* RequestCameraAuthorizationView.swift in Sources */,
+				CF643E8024D33BEB0058F6C2 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
