@@ -11,6 +11,7 @@
 		CF643E8124D33BEB0058F6C2 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF643E7F24D33BEB0058F6C2 /* LaunchViewController.xib */; };
 		CF643E8624D34D100058F6C2 /* RequestCameraAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643E8524D34D100058F6C2 /* RequestCameraAuthorizationView.swift */; };
 		CF643E8824D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF643E8724D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib */; };
+		CF643E8D24D8371F0058F6C2 /* RequestCameraAuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF643E8C24D8371F0058F6C2 /* RequestCameraAuthorizationController.swift */; };
 		CFC5A2BF24D2F08100772B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A2BE24D2F08100772B58 /* AppDelegate.swift */; };
 		CFC5A2C124D2F08100772B58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A2C024D2F08100772B58 /* SceneDelegate.swift */; };
 		CFC5A2C324D2F08100772B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A2C224D2F08100772B58 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		CF643E7F24D33BEB0058F6C2 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		CF643E8524D34D100058F6C2 /* RequestCameraAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCameraAuthorizationView.swift; sourceTree = "<group>"; };
 		CF643E8724D34D9B0058F6C2 /* RequestCameraAuthorizationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCameraAuthorizationView.xib; sourceTree = "<group>"; };
+		CF643E8C24D8371F0058F6C2 /* RequestCameraAuthorizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCameraAuthorizationController.swift; sourceTree = "<group>"; };
 		CFC5A2BB24D2F08100772B58 /* BecomeAPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BecomeAPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC5A2BE24D2F08100772B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC5A2C024D2F08100772B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,30 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		CF643E8924D82F170058F6C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E8A24D82F1E0058F6C2 /* RequestAuthorization */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF643E8A24D82F1E0058F6C2 /* RequestAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E8B24D82F280058F6C2 /* Camera */,
+			);
+			path = RequestAuthorization;
+			sourceTree = "<group>";
+		};
+		CF643E8B24D82F280058F6C2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				CF643E8C24D8371F0058F6C2 /* RequestCameraAuthorizationController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		CFC5A2B224D2F08100772B58 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +141,7 @@
 		CFC5A2BD24D2F08100772B58 /* BecomeAPresenter */ = {
 			isa = PBXGroup;
 			children = (
+				CF643E8924D82F170058F6C2 /* Controllers */,
 				CF643E8224D34AFD0058F6C2 /* Views */,
 				CF643E7B24D3347E0058F6C2 /* ViewControllers */,
 				CFC5A2BE24D2F08100772B58 /* AppDelegate.swift */,
@@ -204,6 +231,7 @@
 				CFC5A2BF24D2F08100772B58 /* AppDelegate.swift in Sources */,
 				CFC5A2C124D2F08100772B58 /* SceneDelegate.swift in Sources */,
 				CF643E8624D34D100058F6C2 /* RequestCameraAuthorizationView.swift in Sources */,
+				CF643E8D24D8371F0058F6C2 /* RequestCameraAuthorizationController.swift in Sources */,
 				CF643E8024D33BEB0058F6C2 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

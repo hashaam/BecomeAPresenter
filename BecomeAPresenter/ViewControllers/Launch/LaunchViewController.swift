@@ -34,10 +34,23 @@ private extension LaunchViewController {
             requestCameraAuthorizationView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
+    
+    func requestCameraAuthorization() {
+        RequestCameraAuthorizationController.requestCameraAuthorization(completionHandler: { status in
+            switch status {
+            case .granted:
+                print("granted")
+            case .notRequested:
+                break
+            case .unauthorized:
+                print("unauthorized")
+            }
+        })
+    }
 }
 
 extension LaunchViewController: RequestCameraAuthorizationViewDelegate {
     func requestCameraAuthorizationActionButtonTapped() {
-        print("request camera authorization button tapped")
+        requestCameraAuthorization()
     }
 }
